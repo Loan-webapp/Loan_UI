@@ -7,6 +7,8 @@ import CustomerInfo from './pages/CustomerInfo';
 import LoanCalculator from './pages/LoanCalculator';
 import LoanDueTable from './pages/LoanDueTable';
 import CustomerLoanList from './pages/CustomerLoanList';
+import PaymentPage from './pages/PaymentPage';
+import PaymentDetailsPage from './pages/PaymentDetailsPage';
  
 function App() {
   return (
@@ -18,7 +20,12 @@ function App() {
           <Route path="/loans/:customerId" element={<CustomerLoanList />} />
 <Route path="/calculator/:customerId" element={<LoanCalculator />} />
 <Route path="/due-table/:loanId" element={<LoanDueTable />} />
+     <Route path="/payments/:loanId" element={<PaymentPage />} />
+          <Route path="/paymentdetails/:transactionId" element={<PaymentDetailsPage />} />
+
         </Routes>
+   
+
       </div>
     </div>
   );

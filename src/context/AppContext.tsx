@@ -1,6 +1,9 @@
 import React, { createContext, useContext, useState } from "react";
 
 export interface Customer {
+  dob: any;
+  occupation: string;
+  income: any;
   _id?: string;   // from MongoDB
   name: string;
   phone: string;
